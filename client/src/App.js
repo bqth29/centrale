@@ -13,7 +13,7 @@ function App() {
               <Link to="/">Accueil</Link>
             </li>
             <li>
-              <Link to="/movies">Liste des films</Link>
+              <Link to="/demo">Liste des films</Link>
             </li>
             <li>
               <Link to="/grades">Noter des films</Link>
