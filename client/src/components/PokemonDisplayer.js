@@ -36,7 +36,7 @@ const PokemonDisplayer = () => {
       return (
         <ul>
           {items.map((item) => (
-            <li key={item.Title}>{item.Title}</li>
+            <li key={item.Title}><a href={"https://www.imdb.com/title/"+item.imdbID}>{item.Title}</a></li>
           ))}
         </ul>
       );

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./hollymood.svg";
 import "./HomePage.css";
 
 const HomePage = () => {
