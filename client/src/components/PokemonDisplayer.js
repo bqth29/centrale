@@ -9,11 +9,11 @@ const PokemonDisplayer = () => {
 
   const fetchExample = async () => {
     try {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
+      const response = await fetch("http://www.omdbapi.com/?apikey=5fee8133&s=Star&r=json");
       const responseJson = await response.json();
       setIsLoaded(true);
       setError(false);
-      setItems(responseJson.results);
+      setItems(responseJson.Search);
     } catch (error) {
       setIsLoaded(true);
       setError(error);
@@ -36,7 +36,7 @@ const PokemonDisplayer = () => {
       return (
         <ul>
           {items.map((item) => (
-            <li key={item.name}>{item.name}</li>
+            <li key={item.Title}>{item.Title}</li>
           ))}
         </ul>
       );

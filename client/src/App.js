@@ -10,10 +10,13 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
-              <Link to="/demo">API Fetch demo</Link>
+              <Link to="/movies">Liste des films</Link>
+            </li>
+            <li>
+              <Link to="/grades">Noter des films</Link>
             </li>
           </ul>
         </nav>
@@ -25,6 +28,8 @@ function App() {
           </Route>
           <Route path="/">
             <HomePage />
+          </Route>
+          <Route path="/movies">
           </Route>
         </Switch>
       </div>
