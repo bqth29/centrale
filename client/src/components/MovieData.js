@@ -41,12 +41,16 @@ useEffect(() => {
           <p></p>
           <a id="MoviePoster">
             <img alt={items["Title"]+" - Poster"} src={items["Poster"]}></img>
+          </a> 
+          <a id="MoviePoster"  href={"https://www.imdb.com/title/"+items["imdbID"]}> 
+            <img alt="IMDB Logo" src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" id="IMDBLogo"></img>
           </a>
           <div id="AboutMovie">
-          <ul><a class="fas fa-graduation-cap"></a>Directed by : {items["Director"]}</ul>
+          <ul><i class="fa fa-film"></i>  {items["Director"]}</ul>
+          <ul><i class="fa fa-star"></i>  {items["Actors"]}</ul>
+          <ul><i class="fa fa-bookmark"></i>  {items["Genre"]}</ul>
           <br></br>
-          <p>Starring : {items["Actors"]}</p>
-          <p>{items["Genre"]}</p>
+          <ul><button type="button" id="RateMovie" onclick="window.location.href = '#';">Rate this movie</button></ul>
           </div>
         </div>
       );
