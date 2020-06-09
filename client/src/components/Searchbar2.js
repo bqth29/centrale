@@ -1,5 +1,6 @@
 import React from "react";
 import "./Searchbar.css";
+import MoviesDisplayer from "./MovieQuery";
 
 class Searchbar extends React.Component {
     constructor() {

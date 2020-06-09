@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import MovieFinder from "./components/MovieFinder";
+import MoviesDisplayer from "./components/MovieQuery";
 import HomePage from "./components/HomePage";
 import DataDisplayer from "./components/MovieData";
 import "./app.css";
@@ -24,8 +24,38 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+
+            {/*Liste des pages de film*/}
+
+          <Route path="/movies/Rogue One: A Star Wars Story">
+            {DataDisplayer("Rogue One: A Star Wars Story")}
+          </Route>
+          <Route path="/movies/Star Wars: Episode IV - A New Hope">
+            {DataDisplayer("Star Wars: Episode IV - A New Hope")}
+          </Route>
+          <Route path="/movies/Star Wars: Episode V - The Empire Strikes Back">
+            {DataDisplayer("Star Wars: Episode V - The Empire Strikes Back")}
+          </Route>
+          <Route path="/movies/Star Wars: Episode VI - Return of the Jedi">
+            {DataDisplayer("Star Wars: Episode VI - Return of the Jedi")}
+          </Route>
+          <Route path="/movies/Star Wars: Episode I - The Phantom Menace">
+            {DataDisplayer("Star Wars: Episode I - The Phantom Menace")}
+          </Route>
+          <Route path="/movies/Star Wars: Episode III - Revenge of the Sith">
+            {DataDisplayer("Star Wars: Episode III - Revenge of the Sith")}
+          </Route>
+          <Route path="/movies/Star Wars: Episode II - Attack of the Clones">
+            {DataDisplayer("Star Wars: Episode II - Attack of the Clones")}
+          </Route>
+          <Route path="/movies/Inception">
+            {DataDisplayer("Inception")}
+          </Route>
+
+            {/*Autres pages*/}
+
           <Route path="/movies">
-            <MovieFinder />
+            {MoviesDisplayer("Star")}
           </Route>
           <Route path="/data">
             {DataDisplayer("Lion King")}
