@@ -23,7 +23,7 @@ function App() {
             <MovieFinder />
           </Route>
           <Route path="/data">
-            <DataDisplayer />
+            {DataDisplayer("Lion King")}
             </Route>
           <Route path="/">
             <HomePage />
