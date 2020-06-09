@@ -2,12 +2,13 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import MovieFinder from "./components/MovieFinder";
 import HomePage from "./components/HomePage";
+import DataDisplayer from "./components/MovieData";
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
+        <nav id="bandeau">
           <ul>
             <li>
               <Link to="/">Accueil</Link>
@@ -16,7 +17,7 @@ function App() {
               <Link to="/movies">Liste des films</Link>
             </li>
             <li>
-              <Link to="/grades">Noter des films</Link>
+              <Link to="/data">Noter des films</Link>
             </li>
           </ul>
         </nav>
@@ -26,10 +27,11 @@ function App() {
           <Route path="/movies">
             <MovieFinder />
           </Route>
+          <Route path="/data">
+            <DataDisplayer />
+            </Route>
           <Route path="/">
             <HomePage />
-          </Route>
-          <Route path="/movies">
           </Route>
         </Switch>
       </div>
