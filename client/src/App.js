@@ -4,7 +4,7 @@ import MovieFinder from "./components/MovieFinder";
 import HomePage from "./components/HomePage";
 import DataDisplayer from "./components/MovieData";
 import "./app.css";
-import Searchbar from "./components/Searchbar";
+import Searchbar from "./components/Searchbar2";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
             <i class="fa fa-search"></i><Link to="/movies"> Find a movie</Link>  | 
             <i class="fa fa-user-tag"></i><Link to="/data"> My mood</Link>
             <Searchbar />
+            {/*<a><i class="fa fa-search"></i></a>*/}
           </ul>
           
         </nav>

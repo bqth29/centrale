@@ -16,12 +16,14 @@ class Searchbar extends React.Component {
 
     render(){
         return(
-            
+            <form action="/movies" method="POST">
                 <input type='text' id="SearchBar"
-                    value={this.state.search}
+                    placeholder={this.state.search}
                    
                     onChange={this.updateSearch.bind(this)}
                     />
+                <input type="submit" value="Search" id="Search" />
+            </form>        
             
         );
     };
