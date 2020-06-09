@@ -43,7 +43,7 @@ useEffect(() => {
             <img alt={items["Title"]+" - Poster"} src={items["Poster"]}></img>
           </a>
           <div id="AboutMovie">
-          <p>Directed by : {items["Director"]}</p>
+          <ul><a class="fas fa-graduation-cap"></a>Directed by : {items["Director"]}</ul>
           <br></br>
           <p>Starring : {items["Actors"]}</p>
           <p>{items["Genre"]}</p>
