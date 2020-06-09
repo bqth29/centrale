@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import MovieFinder from "./components/MovieFinder";
 import HomePage from "./components/HomePage";
 import DataDisplayer from "./components/MovieData";
+import "./app.css";
 
 function App() {
   return (
@@ -10,15 +11,9 @@ function App() {
       <div>
         <nav id="bandeau">
           <ul>
-            <li>
-              <Link to="/">Accueil</Link>
-            </li>
-            <li>
-              <Link to="/movies">Liste des films</Link>
-            </li>
-            <li>
-              <Link to="/data">Noter des films</Link>
-            </li>
+            <i class="fa fa-home"></i><Link to="/"> Home</Link>  |
+            <i class="fa fa-search"></i><Link to="/movies"> Find a movie</Link>  | 
+            <i class="fa fa-user-tag"></i><Link to="/data"> My mood</Link>
           </ul>
         </nav>
         {/* A <Switch> looks through its children <Route>s and

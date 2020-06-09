@@ -9,7 +9,7 @@ const DataDisplayer = () => {
   
     const fetchExample = async () => {
       try {
-        const response = await fetch("http://www.omdbapi.com/?apikey=5fee8133&t=Rogue One&r=json");
+        const response = await fetch("http://www.omdbapi.com/?apikey=5fee8133&t=interstellar&r=json");
         const responseJson = await response.json();
         setIsLoaded(true);
         setError(false);
@@ -49,7 +49,7 @@ useEffect(() => {
           <ul><i class="fa fa-film"></i>  {items["Director"]}</ul>
           <ul><i class="fa fa-star"></i>  {items["Actors"]}</ul>
           <ul><i class="fa fa-bookmark"></i>  {items["Genre"]}</ul>
-          <br></br>
+          <ul><h3>→ 95% recommanded</h3></ul>
           <ul><button type="button" id="RateMovie" onclick="window.location.href = '#';">Rate this movie</button></ul>
           </div>
         </div>

@@ -1,3 +1,33 @@
-#bandeau {
-    
+@import url(./components/fontawesome-all.min.css);
+
+
+nav#bandeau {
+    height: 50px;
+    background-color: white;
 }
+
+/*ul {
+    color: #282c34;
+}*/
+
+i {
+    display: inline-block;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius:100px;
+    width:10px;
+    height:10px;
+    align-items: center;
+    border: 1px solid white;
+    /*padding: 10px;*/
+  }
+
+  .fa {
+    /*padding: 0.7em;*/
+    width: 30px; /** fix width ***/
+    height: 30px;
+    text-align: center;
+    /*display: inline;*/
+    border-radius: 50%;
+    line-height: 30px;  /** for vertical center - if needed **/
+  }
