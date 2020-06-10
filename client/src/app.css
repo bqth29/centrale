@@ -148,3 +148,7 @@ button {
     line-height: calc(2.75rem - 2px);
 }  
 
+img#logolink {
+    height: 50px;
+}
+

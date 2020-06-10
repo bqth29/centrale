@@ -2,9 +2,13 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import DataDisplayer from "./MovieData";
 import "./MovieQuery.css";
+import {
+  useParams
+} from "react-router-dom";
 
 
-function MoviesDisplayer(keyword) {
+function MoviesDisplayer() {
+  let {keyword} = useParams();
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -28,7 +32,7 @@ function MoviesDisplayer(keyword) {
     fetchExample();
     // The useEffect hook will retrigger every time an element in the dependency array changes.
     // changes = strict egality, so beware when mutating objects
-  }, [fetchAgain]);
+  }, [fetchAgain,keyword]);
 
   const displayMovies = () => {
     if (error) {

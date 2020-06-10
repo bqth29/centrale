@@ -54,7 +54,7 @@ useEffect(() => {
           <ul><i class="fa fa-star"></i>  {items["Actors"]}</ul>
           <ul><i class="fa fa-bookmark"></i>  {items["Genre"]}</ul>
           <ul><h3>→ 95% recommanded</h3></ul>
-          <ul><button type="button" id="RateMovie" onclick="window.location.href = '#';">Rate this movie</button></ul>
+          <ul><button type="button" id="RateMovie">Rate this movie</button></ul>
           </div>
         </div>
       );
