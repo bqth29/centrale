@@ -41,10 +41,10 @@ function MoviesDisplayer() {
       return <div id="MoviesList">Loading...</div>;
     } else {
       return (
-        <nav>
+        <nav id="Results">
           <ul>
           {items.map((item) => (
-            <li><Link to={"/movies/"+item.Title}>{item.Title}</Link></li>
+            <li><Link to={"/movies/"+item.Title} class="LinkReact">{item.Title}</Link></li>
           ))}
           </ul>
           </nav>          

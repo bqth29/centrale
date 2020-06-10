@@ -2,8 +2,12 @@
 
 
 nav#bandeau {
-    height: 55px;
+    height: 70px;
     background-color: white;
+}
+
+.BandeauLink {
+    color: #282c34;
 }
 
 /*ul {
@@ -149,6 +153,8 @@ button {
 }  
 
 img#logolink {
-    height: 50px;
+    height: 5px;
+    color: #282c34;
+    
 }
 

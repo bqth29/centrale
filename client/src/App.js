@@ -5,7 +5,7 @@ import HomePage from "./components/HomePage";
 import DataDisplayer from "./components/MovieData";
 import "./app.css";
 import Searchbox from "./components/Searchbar";
-import logo from "./components/hollymood-white.svg";
+import logo from "./components/hollymood-darkblue.svg";
 
 
 
@@ -19,10 +19,12 @@ function App() {
         <nav id="bandeau">
           
           <ul>
-            <i class="fa fa-home"></i><Link to="/"> Home</Link>  |
-            <i class="fa fa-user-tag"></i><Link to="/data"> My mood</Link>
+            <a id="SiteLogo"  href="/"> 
+            <img alt="IMDB Logo" src={logo} id="AppLogo"></img>
+            </a>
             <Searchbox handleChange={(e) => {setRecherche(e.target.value);console.log(recherche)}}/>
-            <i class="fa fa-search"></i><Link to={"/query/"+recherche}>Search</Link>
+            <i class="fa fa-search"></i><Link to={"/query/"+recherche} class="BandeauLink">Search</Link> |
+            <i class="fa fa-user-tag"></i><Link to="/data" class="BandeauLink"> My mood</Link>
             
             {/*<a><i class="fa fa-search"></i></a>*/}
           </ul>
