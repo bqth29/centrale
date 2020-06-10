@@ -4,13 +4,13 @@ Resources:
         Properties:
             TableName: ${self:service.name}-dynamodb
             AttributeDefinitions:
-                - AttributeName: type
+                - AttributeName: user_id
                   AttributeType: S
-                - AttributeName: uuid
+                - AttributeName: film_id
                   AttributeType: S
             KeySchema:
-                - AttributeName: type
+                - AttributeName: user_id
                   KeyType: HASH
-                - AttributeName: uuid
+                - AttributeName: film_id
                   KeyType: RANGE
             BillingMode: PAY_PER_REQUEST

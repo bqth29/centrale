@@ -1,4 +1,4 @@
-const uuid = require('uuid');
+
 const DynamoDB = require('aws-sdk/clients/dynamodb');
 
 module.exports.handle = async event => {
@@ -10,9 +10,9 @@ module.exports.handle = async event => {
     const dynamoDb = new DynamoDB.DocumentClient();
 
     const item = {
-        type: 'items',
-        uuid: uuid.v1(),
-        content: data.content,
+        user_id: data.user_id,
+        film_id: data.film_id,
+        note: data.note,
         createdAt: Date.now(),
     }
 
