@@ -20,7 +20,6 @@ function App() {
           
           <ul>
             <i class="fa fa-home"></i><Link to="/"> Home</Link>  |
-            <i class="fa fa-search"></i><Link to="/movies"> Find a movie</Link>  | 
             <i class="fa fa-user-tag"></i><Link to="/data"> My mood</Link>
             <Searchbox handleChange={(e) => {setRecherche(e.target.value);console.log(recherche)}}/>
             <i class="fa fa-search"></i><Link to={"/query/"+recherche}>Search</Link>
