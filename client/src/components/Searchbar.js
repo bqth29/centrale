@@ -1,31 +1,14 @@
 import React from "react";
-import "./Searchbar.css";
 
-class Searchbar extends React.Component {
-    constructor() {
-        super();
-        this.state={
-            search : 'Search a movie'
-        };
-    };
+const Searchbox = (props) => {
+    return(
+        <input tupe = 'search'
+        className = 'search'
+        placeholder="Rechercher un film"
+        onChange={props.handleChange}
+        />
+    )
+}; 
 
-    updateSearch(event) {
-        this.setState({search: event.target.value});
-        
-    };
-
-    render(){
-        return(
-            
-                <input type='text' id="SearchBar"
-                    value={this.state.search}
-                   
-                    onChange={this.updateSearch.bind(this)}
-                    />
-            
-        );
-    };
-};
-
-export default Searchbar;
+export default Searchbox;
 
