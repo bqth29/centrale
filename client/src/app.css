@@ -8,6 +8,8 @@ nav#bandeau {
 
 .BandeauLink {
     color: #282c34;
+    
+    text-decoration: none;
 }
 
 /*ul {
