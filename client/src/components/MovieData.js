@@ -13,7 +13,7 @@ function DataDisplayer() {
   
     const fetchExample = async () => {
       try {
-        const response = await fetch("http://www.omdbapi.com/?apikey=5fee8133&t="+{name}+"&r=json");
+        const response = await fetch("http://www.omdbapi.com/?apikey=5fee8133&t="+name+"&r=json");
         const responseJson = await response.json();
         setIsLoaded(true);
         setError(false);

@@ -37,12 +37,13 @@ function MoviesDisplayer(keyword) {
       return <div id="MoviesList">Loading...</div>;
     } else {
       return (
+        <nav>
           <ul>
           {items.map((item) => (
             <li><Link to={"/movies/"+item.Title}>{item.Title}</Link></li>
           ))}
           </ul>
-          
+          </nav>          
           
       );
     }
