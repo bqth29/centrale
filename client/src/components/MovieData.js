@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./MovieData.css";
+import {
+  useParams
+} from "react-router-dom";
 
-function DataDisplayer(movie_title) {
+function DataDisplayer() {
+    let {name} = useParams();
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
@@ -9,7 +13,7 @@ function DataDisplayer(movie_title) {
   
     const fetchExample = async () => {
       try {
-        const response = await fetch("http://www.omdbapi.com/?apikey=5fee8133&t="+movie_title+"&r=json");
+        const response = await fetch("http://www.omdbapi.com/?apikey=5fee8133&t="+{name}+"&r=json");
         const responseJson = await response.json();
         setIsLoaded(true);
         setError(false);

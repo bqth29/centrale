@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import DataDisplayer from "./MovieData";
 import "./MovieQuery.css";
 
+
 function MoviesDisplayer(keyword) {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -41,6 +42,8 @@ function MoviesDisplayer(keyword) {
             <li><Link to={"/movies/"+item.Title}>{item.Title}</Link></li>
           ))}
           </ul>
+          
+          
       );
     }
   };
