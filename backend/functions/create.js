@@ -22,8 +22,14 @@ module.exports.handle = async event => {
     }).promise();
 
     return {
-        statusCode: 200,
-        body: JSON.stringify(item),
+        statusCode: 200, 
+        headers: {
+              'Access-Control-Allow-Origin': 'http://localhost:3000',
+              'Access-Control-Allow-Credentials': 'true',
+            },
+        body: JSON.stringify(item)
+ 
     }
 }
+
 

@@ -9,8 +9,8 @@ module.exports.handle = async event => {
     const result = await dynamoDb.get({
         TableName: process.env.tableName,
         Key: {
-            type: 'items',
-            uuid: event.pathParameters.id,
+            user_id: 'Jean-Marc',
+            film_id: 'The Lion King',
         },
     }).promise();
 
@@ -22,7 +22,11 @@ module.exports.handle = async event => {
     } else {
         return {
             statusCode: 404,
-            body: 'Not found'
+            body: 'Not found',
+            headers: {
+                'Access-Control-Allow-Origin': 'http://localhost:3000',
+                'Access-Control-Allow-Credentials': 'true',
+              },
         }
     }
 }
