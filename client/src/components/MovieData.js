@@ -7,6 +7,7 @@ import {
 import Rajout from "./create_user"
 import note from "./get_note";
 
+
 function DataDisplayer() {
     let {name} = useParams();
     const [error, setError] = useState(null);
