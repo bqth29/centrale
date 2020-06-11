@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import note from "./get_note";
+import Validate from "./validate_button";
 import Rajout from "./create_user";
 
 
@@ -62,10 +63,8 @@ useEffect(() => {
           <ul><i class="fa fa-bookmark"></i>  {items["Genre"]}</ul>
           <ul><h3>→ 95% recommanded</h3></ul>
           <ul>
-            <Stars />
-            <button onclick={console.log(Stars.rating)}>
-              Validate
-            </button>
+            <Stars movie="toto" />
+            <Validate/>
           </ul>
           
           </div>
