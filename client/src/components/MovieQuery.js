@@ -44,7 +44,7 @@ function MoviesDisplayer() {
         <nav id="Results">
           <ul>
           {items.map((item) => (
-            <li><Link to={"/movies/"+item.Title} class="LinkReact">{item.Title}</Link></li>
+            <li><Link to={"/movies/"+item.Title} class="LinkReact">{item.Title+" ("+item.Year+")"}</Link></li>
           ))}
           </ul>
           </nav>          

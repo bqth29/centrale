@@ -4,6 +4,9 @@ import "./MovieData.css";
 import {
   useParams
 } from "react-router-dom";
+import Rajout from "./create_user"
+import note from "./get_note";
+
 
 function DataDisplayer() {
     let {name} = useParams();
@@ -24,6 +27,8 @@ function DataDisplayer() {
         setError(error);
       }
 };
+
+
 
 useEffect(() => {
     setIsLoaded(false);
@@ -55,7 +60,7 @@ useEffect(() => {
           <ul><i class="fa fa-star"></i>  {items["Actors"]}</ul>
           <ul><i class="fa fa-bookmark"></i>  {items["Genre"]}</ul>
           <ul><h3>→ 95% recommanded</h3></ul>
-          <ul><Stars/></ul>
+          <ul><Stars /></ul>
           </div>
         </div>
       );
@@ -65,6 +70,8 @@ useEffect(() => {
   return (
     <div>
       {displayData()}
+      {Rajout(name,4)}
+      {note()}
     </div>
   );
 };
