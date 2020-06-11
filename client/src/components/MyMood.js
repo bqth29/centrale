@@ -43,7 +43,7 @@ function recom(film,genre1,genre2,genre3){
     return(s)
 }
 
-function mood(genre1,genre2,genre3){
+function mood(genre1="",genre2="",genre3=""){
     var best = "";
     var score = 0;
 
