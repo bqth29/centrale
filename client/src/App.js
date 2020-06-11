@@ -6,7 +6,7 @@ import DataDisplayer from "./components/MovieData";
 import "./app.css";
 import Searchbox from "./components/Searchbar";
 import logo from "./components/hollymood-darkblue.svg";
-import MoodScrollBar from "./components/MyMoodPage";
+import {MoodScrollBar} from "./components/MyMoodPage";
 
 
 

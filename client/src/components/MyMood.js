@@ -16,7 +16,16 @@ const mood_movies = {
     "Kill Bill": ["Violence", "Crime", "Horror"],
     "Once Upon a Time in the West": ["Western", "Action", "Adventure"],
     "Murder on the Orient Express": ["Polar", "Crime", "Adventure"],
-    "Maverick": ["Comedy", "Western", "Action"]
+    "Maverick": ["Comedy", "Western", "Action"],
+    "Interstellar": ["Sci-Fi", "Adventure", "Thriller"],
+    "Frozen": ["Children", "Musical", "Romance"],
+    "Forrest Gump": ["Drama", "Comedy", "Romance"],
+    "Inception": ["Action", "Thriller", "Sci-Fi"],
+    "The Mandalorian": ["Sci-Fi", "Action", "Western"],
+    "Rick and Morty": ["Sci-Fi", "Comedy", "Crime"],
+    "Kung Fu Panda": ["Children", "Comedy", "Action"],
+    "Tell No One": ["Thriller", "Crime", "Polar"],
+    "RED": ["Violence", "Comedy", "Action"]
 }
 
 

@@ -1,0 +1,29 @@
+div#MyMoodResults {
+    background-color: #282c34;
+    color: white;
+}
+
+div#MyMoodScrollBar {
+    background-color: #282c34;
+}
+
+p#IntroPhrase {
+    text-align: center;
+}
+
+a#MyMoodPoster {
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin-top: 0px;
+    height: 40rem;
+}
+
+img {
+    text-align: center;
+    align-items: center;
+}
+
+span {
+    text-align: center;
+}

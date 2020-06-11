@@ -2,6 +2,8 @@ import React from 'react';
 
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
+
+import getValue from 'react-select';
 {/*import { genresOptions } from './genres';*/}
 
 const genresOptions = [
@@ -26,14 +28,18 @@ const genresOptions = [
 
 const animatedComponents = makeAnimated();
 
-export default function AnimatedMulti() {
+const AnimatedMulti = (props) => {
   return (
     <Select
       closeMenuOnSelect={false}
       components={animatedComponents}
-      defaultValue={[genresOptions[13], genresOptions[0], genresOptions[6]]}
+      defaultValue = {[genresOptions[13], genresOptions[0],genresOptions[1]]}
       isMulti
       options={genresOptions}
+      onChange={props.handleChange}
     />
   );
 }
+
+export default AnimatedMulti;
+
