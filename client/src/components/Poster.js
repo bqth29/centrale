@@ -37,14 +37,15 @@ useEffect(() => {
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
-      return (
+      return (<span>
+        <p id="plot">{items["Plot"]}</p>
         <div className="MovieData">
-          
           <a id="MyMoodPoster" href={"/movies/"+items["Title"]}>
             <img alt={items["Title"]+" - Poster"} src={items["Poster"]}></img>
           </a> 
           
         </div>
+        </span>
       );
     }
   };
