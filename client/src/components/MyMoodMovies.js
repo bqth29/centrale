@@ -1,0 +1,20 @@
+const mood_movies = {
+    "Star Wars: Episode I - The Phantom Menace": ["Sci-Fi", "Action", "Adventure"],
+    "Harry Potter and the Sorcerer's Stone": ["Fantastic", "Action", "Fantasy"],
+    "The Lord of the Rings: The Fellowship of the Ring": ["Fantasy", "Action", "Adventure"],
+    "Indiana Jones and the Raiders of the Lost Ark": ["Adventure", "Action", "Comedy"],
+    "Skyfall": ["Action", "Polar", "Crime"],
+    "The Lion King": ["Children", "Comedy", "Musical"],
+    "Avengers: Endgame": ["Heroes", "Action", "Fantastic"],
+    "Schindler's List": ["Drama", "Crime", "Violence"],
+    "Gone Girl": ["Thriller", "Drama", "Crime"],
+    "The Naked Gun": ["Comedy", "Polar", "Action"],
+    "The Notebook": ["Romance", "Drama", "Comedy"],
+    "La La Land": ["Musical", "Romance", "Drama"],
+    "It": ["Horror", "Crime", "Violence"],
+    "The Godfather": ["Crime", "Drama", "Polar"],
+    "Kill Bill": ["Violence", "Crime", "Horror"],
+    "Once Upon a Time in the West": ["Western", "Action", "Adventure"],
+    "Murder on the Orient Express": ["Polar", "Crime", "Adventure"],
+    "Maverick": ["Comedy", "Western", "Action"]
+}
