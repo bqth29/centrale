@@ -73,8 +73,7 @@ useEffect(() => {
 
   return (
     <div>
-      {displayData()}  
-      {note()}    
+      {displayData()}     
     </div>
   );
 };
